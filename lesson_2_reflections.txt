@@ -3,3 +3,18 @@ When you initialize a repo it creates a hidden .git folder that is ready to trac
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The staging area is the middle ground between only being in the working directory, and being in both the repo and pwd. That way you can get files ready to commit, and don't accidentally do so.
+
+How can you use the staging area to make sure you have one commit per logical change?
+You can compare the changes between the file in the staging area and the repo with %git diff --staged and confirm exactly what the changes were.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches could keep my history organized by having logical experimental branches that don't necessarily rely on going back and forth on the master branch.
+
+How do the diagrams help you visualize the branch structure?
+It's like a tree, you can see where the versions diverge and how you may want to merge them later.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The result is taking the intended changes and adding them to the most recent common commit. The diagram shows where that recent commit came from.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Starting with the cons, unfortunately this requires extra work on the part of the user to compare commits and see which one deserves the merging or whether there's another answer. On the pro side, this leaves out many potential bugs that would occur if git tried to guess how the merge should be done.
