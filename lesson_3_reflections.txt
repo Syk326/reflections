@@ -12,3 +12,6 @@ The benefit of having that local copy is that not only is it fast, but it doesn'
 
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 I would use Google Docs, so that collab would be real-time in docs. For code, I would probably just have to email files back and forth, or save on a common server, which would be very inconvenient.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+You would make a change in a separate branch if you were working on an experimental features, or wanted to collaborate with a colleague before merging it into master. Working on master is simpler, but branches gives you that extra option.
